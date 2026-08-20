@@ -5,6 +5,15 @@ page_css: /assets/css/home.css
 ---
 
 <section class="hero-cover">
+  <img
+    class="hero-cover-image"
+    src="{{ '/assets/images/legacy/glee-kickoff-1.jpg.jpeg' | relative_url }}"
+    alt=""
+    aria-hidden="true"
+  >
+
+  <div class="hero-cover-overlay"></div>
+
   <div class="hero-cover-content">
     <h1>GLC</h1>
 
