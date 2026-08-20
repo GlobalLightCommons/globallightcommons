@@ -1,0 +1,16 @@
+<article class="resource-publication">
+    <div class="resource-publication-body">
+      {{ reference }}
+  
+      {% if entry.url %}
+        <a
+          class="resource-link"
+          href="{{ entry.url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View publication →
+        </a>
+      {% endif %}
+    </div>
+  </article>

@@ -1,0 +1,249 @@
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+
+   .about-page {
+    width: 100%;
+  }
+  
+  
+  /* ========================================
+     INTRO
+     ======================================== */
+  
+  .about-intro {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem 5rem;
+  }
+  
+  .about-intro h1 {
+    margin: 0 0 1.75rem;
+  
+    color: var(--glc-accent-dark);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  
+  .about-tagline {
+    max-width: 1050px;
+    margin: 0 0 1.75rem;
+  
+    color: var(--glc-ink);
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  .about-tagline strong {
+    font-weight: 700;
+  }
+  
+  .about-tagline em {
+    font-weight: 400;
+  }
+  
+  .about-intro-text {
+    max-width: 1000px;
+    margin: 0 0 2.5rem;
+  
+    color: #374151;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  
+  
+  /* ========================================
+     INTRO IMAGE
+     ======================================== */
+  
+  .about-intro-image {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .about-intro-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  
+    border-radius: 0.8rem;
+    box-shadow: 0 10px 24px rgba(24, 37, 34, 0.08);
+  }
+  
+  
+  /* ========================================
+     CONTENT SECTIONS
+     ======================================== */
+  
+  .about-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem;
+  }
+  
+  .about-section h2 {
+    margin: 0 0 1.5rem;
+  
+    color: var(--glc-accent-dark);
+    font-size: clamp(1.8rem, 2.8vw, 2.5rem);
+    font-weight: 650;
+    line-height: 1.2;
+  }
+  
+  .about-section > p {
+    max-width: 1050px;
+    margin: 0 0 1.5rem;
+  
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  
+  .about-section > p:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  /* ========================================
+     SOFT SECTIONS
+     ======================================== */
+  
+  .about-section-soft {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .about-section-soft::before {
+    content: "";
+  
+    position: absolute;
+    z-index: -1;
+  
+    top: 0;
+    bottom: 0;
+    left: 50%;
+  
+    width: 100vw;
+  
+    transform: translateX(-50%);
+  
+    background: #f8fafc;
+  }
+  
+  
+  /* ========================================
+     MISSION LIST
+     ======================================== */
+  
+  .mission-list {
+    max-width: 1050px;
+  
+    margin: 2rem 0 2rem;
+    padding-left: 1.5rem;
+  }
+  
+  .mission-list li {
+    margin-bottom: 1.25rem;
+    padding-left: 0.35rem;
+  
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .mission-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .mission-list li::marker {
+    color: var(--glc-accent-dark);
+  }
+  
+  .mission-list strong {
+    color: var(--glc-ink);
+    font-weight: 700;
+  }
+  
+  
+  /* ========================================
+     TABLET
+     ======================================== */
+  
+  @media (max-width: 850px) {
+    .about-intro {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  
+    .about-intro-image {
+      max-width: 760px;
+    }
+  
+    .about-section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+  
+  
+  /* ========================================
+     MOBILE
+     ======================================== */
+  
+  @media (max-width: 600px) {
+    .about-intro,
+    .about-section {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
+  
+    .about-intro {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+  
+    .about-intro h1 {
+      margin-bottom: 1.25rem;
+  
+      font-size: clamp(2.3rem, 11vw, 3rem);
+    }
+  
+    .about-tagline {
+      margin-bottom: 1.5rem;
+  
+      font-size: 1.1rem;
+    }
+  
+    .about-intro-text {
+      margin-bottom: 2rem;
+  
+      font-size: 1rem;
+    }
+  
+    .about-intro-image {
+      max-width: 100%;
+    }
+  
+    .about-section {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+  
+    .about-section h2 {
+      margin-bottom: 1.25rem;
+    }
+  
+    .mission-list {
+      padding-left: 1.25rem;
+    }
+  
+    .mission-list li {
+      margin-bottom: 1.1rem;
+      padding-left: 0.15rem;
+    }
+  }

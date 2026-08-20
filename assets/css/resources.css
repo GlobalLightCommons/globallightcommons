@@ -1,0 +1,222 @@
+/* ========================================
+   RESOURCES PAGE
+   ======================================== */
+
+   .resources-page {
+    width: 100%;
+  }
+  
+  
+  /* ========================================
+     INTRO
+     ======================================== */
+  
+  .resources-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem 3rem;
+  
+    text-align: center;
+  }
+  
+  .resources-intro h1 {
+    margin: 0 0 1.25rem;
+  
+    color: var(--glc-accent-dark);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  
+  .resources-intro p {
+    max-width: 850px;
+    margin: 0 auto;
+  
+    color: var(--glc-muted);
+    font-size: 1.2rem;
+    line-height: 1.65;
+  }
+  
+  
+  /* ========================================
+     CONTENT
+     ======================================== */
+  
+  .resources-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem 5rem;
+  }
+  
+  
+  /* ========================================
+     TABS
+     ======================================== */
+  
+  .resources-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  
+    margin-bottom: 3rem;
+  }
+  
+  .resources-tabs a {
+    padding: 0.75rem 1rem;
+  
+    border: 1px solid var(--glc-line);
+    border-radius: 0.7rem;
+  
+    background: #fff;
+    color: var(--glc-ink);
+  
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+  
+    transition:
+      border-color 0.15s ease,
+      background 0.15s ease,
+      color 0.15s ease;
+  }
+  
+  .resources-tabs a:hover,
+  .resources-tabs a:focus {
+    border-color: var(--glc-accent);
+    background: var(--glc-accent-soft);
+    color: var(--glc-accent-dark);
+  }
+  
+  
+  /* ========================================
+     GROUPS
+     ======================================== */
+  
+  .resources-group {
+    margin-top: 4rem;
+  }
+  
+  .resources-group:first-of-type {
+    margin-top: 0;
+  }
+  
+  .resources-group h2 {
+    margin: 0 0 1.75rem;
+  
+    color: var(--glc-accent-dark);
+    font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+    font-weight: 650;
+    line-height: 1.2;
+  }
+  
+  
+  /* ========================================
+     JEKYLL SCHOLAR OUTPUT
+     ======================================== */
+  
+  .resources-list .bibliography {
+    margin: 0;
+    padding: 0;
+  
+    list-style: none;
+  }
+  
+  .resources-list .bibliography > li {
+    margin: 0 0 1.5rem;
+    padding: 1.75rem 2rem;
+  
+    border: 1px solid var(--glc-line);
+    border-radius: 0.9rem;
+  
+    background: #fff;
+  
+    box-shadow:
+      0 6px 18px rgba(24, 37, 34, 0.05);
+  }
+  
+  .resources-list .bibliography > li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .resources-list .bibliography span {
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .resources-list .bibliography a {
+    color: var(--glc-accent-dark);
+    text-decoration: none;
+  }
+  
+  .resources-list .bibliography a:hover,
+  .resources-list .bibliography a:focus {
+    color: var(--glc-coral);
+  }
+  
+  
+  /* ========================================
+     EMPTY GROUPS
+     ======================================== */
+  
+  .resources-list:empty::after {
+    content: "No resources added yet.";
+  
+    display: block;
+  
+    padding: 1.5rem;
+  
+    border: 1px dashed var(--glc-line);
+    border-radius: 0.8rem;
+  
+    color: var(--glc-muted);
+    text-align: center;
+  }
+  
+  
+  /* ========================================
+     TABLET
+     ======================================== */
+  
+  @media (max-width: 850px) {
+    .resources-tabs {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  
+  /* ========================================
+     MOBILE
+     ======================================== */
+  
+  @media (max-width: 600px) {
+    .resources-intro,
+    .resources-content {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
+  
+    .resources-intro {
+      padding-top: 3.5rem;
+      padding-bottom: 2.5rem;
+    }
+  
+    .resources-intro h1 {
+      font-size: clamp(2.3rem, 11vw, 3rem);
+    }
+  
+    .resources-intro p {
+      font-size: 1.05rem;
+    }
+  
+    .resources-tabs {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+  
+    .resources-list .bibliography > li {
+      padding: 1.4rem 1.25rem;
+    }
+  }

@@ -1,0 +1,481 @@
+/* ========================================
+   EVENTS PAGE
+   ======================================== */
+
+   .events-page {
+    width: 100%;
+  }
+  
+  
+  /* ========================================
+     INTRO
+     ======================================== */
+  
+  .events-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem 3.5rem;
+  
+    text-align: center;
+  }
+  
+  .events-intro h1 {
+    margin: 0 0 1.25rem;
+  
+    color: var(--glc-accent-dark);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  
+  .events-intro p {
+    max-width: 850px;
+    margin: 0 auto;
+  
+    color: var(--glc-muted);
+    font-size: 1.2rem;
+    line-height: 1.65;
+  }
+  
+  
+  /* ========================================
+     UPCOMING
+     ======================================== */
+  
+  .events-upcoming {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 5rem;
+  }
+  
+  .events-kicker {
+    margin: 0 0 1.5rem;
+  
+    color: var(--glc-muted);
+    font-size: 1rem;
+  }
+  
+  
+  /* ========================================
+     FEATURED EVENT
+     ======================================== */
+  
+  .featured-event {
+    border: 1px solid var(--glc-line);
+    border-radius: 1rem;
+  
+    background: #fff;
+  
+    box-shadow:
+      0 14px 34px rgba(24, 37, 34, 0.08);
+  
+    overflow: hidden;
+  }
+  
+  .featured-event-image {
+    width: 100%;
+  }
+  
+  .featured-event-image img {
+    display: block;
+  
+    width: 100%;
+    max-height: 430px;
+  
+    object-fit: cover;
+  }
+  
+  .featured-event-body {
+    padding: 2.75rem;
+  }
+  
+  .featured-event-body > h2 {
+    margin: 0 0 0.75rem;
+  
+    color: var(--glc-ink);
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  
+  .featured-event-subtitle {
+    margin: 0 0 2rem;
+  
+    color: #374151;
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+  
+  
+  /* ========================================
+     FEATURED INTRO
+     ======================================== */
+  
+  .featured-event-intro {
+    margin-bottom: 2rem;
+    padding: 1.75rem;
+  
+    border-radius: 0.8rem;
+  
+    background: #f8fafc;
+  }
+  
+  .featured-event-intro p {
+    margin: 0 0 1.25rem;
+  
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  
+  .featured-event-intro p:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  /* ========================================
+     TRAINING TRACKS
+     ======================================== */
+  
+  .training-tracks {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  
+    margin-top: 2rem;
+  }
+  
+  .training-card {
+    padding: 1.75rem;
+  
+    border: 1px solid var(--glc-line);
+    border-radius: 0.8rem;
+  
+    background: #fff;
+  }
+  
+  .training-card-beginner {
+    border-color: #a7f3d0;
+  }
+  
+  .training-card-advanced {
+    border-color: #bfdbfe;
+  }
+  
+  .training-label {
+    margin: 0 0 1rem;
+  
+    color: var(--glc-muted);
+    font-size: 0.9rem;
+  }
+  
+  .training-card h3 {
+    margin: 0 0 1.25rem;
+  
+    color: var(--glc-ink);
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  .training-card p {
+    margin: 0 0 1rem;
+  
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .training-card p:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  /* ========================================
+     FORMAT
+     ======================================== */
+  
+  .event-format {
+    margin-top: 2rem;
+    padding: 1.75rem;
+  
+    border: 1px solid var(--glc-line);
+    border-radius: 0.8rem;
+  
+    background: #fff;
+  }
+  
+  .event-format h3 {
+    margin: 0 0 1.25rem;
+  
+    color: var(--glc-ink);
+    font-size: 1.2rem;
+  }
+  
+  .event-format p {
+    margin: 0 0 1rem;
+  
+    color: #374151;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .event-format p:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  /* ========================================
+     ACTIONS
+     ======================================== */
+  
+  .featured-event-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  
+    margin-top: 2rem;
+  }
+  
+  .event-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 0.8rem 1.25rem;
+  
+    border: 1px solid var(--glc-accent);
+    border-radius: 0.65rem;
+  
+    background: var(--glc-accent);
+    color: #fff;
+  
+    font-size: 0.95rem;
+    font-weight: 600;
+  
+    text-decoration: none;
+  }
+  
+  .event-button-secondary {
+    background: #fff;
+    color: var(--glc-accent-dark);
+  }
+  
+  
+  /* ========================================
+     PAST EVENTS
+     ======================================== */
+  
+  .past-events {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem 5rem;
+  }
+  
+  .past-events > h2 {
+    margin: 0 0 3rem;
+  
+    color: var(--glc-accent-dark);
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    font-weight: 650;
+  
+    text-align: center;
+  }
+  
+  .past-events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  
+  /* ========================================
+     PAST EVENT
+     ======================================== */
+  
+  .past-event {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.6fr);
+    gap: 2.5rem;
+  
+    align-items: start;
+  }
+  
+  /* ========================================
+   PAST EVENT IMAGE
+   ======================================== */
+
+.past-event-image {
+    width: 100%;
+    min-width: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 0.8rem;
+  
+    background: #fff;
+  
+    box-shadow:
+      0 8px 20px rgba(24, 37, 34, 0.06);
+  
+    overflow: hidden;
+  }
+  
+  .past-event-image img {
+    display: block;
+  
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+  
+    object-fit: contain;
+  }
+  
+  .past-event-body {
+    padding-top: 0.25rem;
+  }
+  
+  .past-event-date {
+    margin: 0 0 0.75rem;
+  
+    color: var(--glc-accent);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .past-event-body h3 {
+    margin: 0 0 1rem;
+  
+    color: var(--glc-ink);
+    font-size: clamp(1.5rem, 2.4vw, 2rem);
+    font-weight: 700;
+    line-height: 1.25;
+  }
+  
+  .past-event-body > p:not(.past-event-date) {
+    margin: 0 0 1.15rem;
+  
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  
+  /* ========================================
+     EVENT META
+     ======================================== */
+  
+  .event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+  
+    margin-top: 1.5rem;
+  
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
+  
+  
+  /* ========================================
+     EVENT LINKS
+     ======================================== */
+  
+  .event-link {
+    display: inline-block;
+  
+    margin-top: 1.5rem;
+  
+    color: var(--glc-accent-dark);
+  
+    font-size: 0.95rem;
+    font-weight: 600;
+  
+    text-decoration: none;
+  }
+  
+  .event-link:hover,
+  .event-link:focus {
+    color: var(--glc-coral);
+  }
+  
+  .event-link-disabled {
+    color: #9ca3af;
+  
+    cursor: default;
+  }
+  
+  
+  /* ========================================
+     TABLET
+     ======================================== */
+  
+  @media (max-width: 850px) {
+    .training-tracks {
+      grid-template-columns: 1fr;
+    }
+  
+    .past-event {
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+    }
+  
+    .past-event-image {
+      max-width: 600px;
+    }
+  
+    .past-event-image img {
+      aspect-ratio: 16 / 10;
+    }
+  }
+  
+  
+  /* ========================================
+     MOBILE
+     ======================================== */
+  
+  @media (max-width: 600px) {
+    .events-intro,
+    .events-upcoming,
+    .past-events {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
+  
+    .events-intro {
+      padding-top: 3.5rem;
+      padding-bottom: 2.5rem;
+    }
+  
+    .events-intro h1 {
+      font-size: clamp(2.3rem, 11vw, 3rem);
+    }
+  
+    .events-intro p {
+      font-size: 1.05rem;
+    }
+  
+    .featured-event-body {
+      padding: 1.5rem 1.25rem;
+    }
+  
+    .featured-event-intro,
+    .training-card,
+    .event-format {
+      padding: 1.25rem;
+    }
+  
+    .featured-event-actions {
+      grid-template-columns: 1fr;
+    }
+  
+    .past-events > h2 {
+      margin-bottom: 2rem;
+    }
+  
+    .past-events-list {
+      gap: 2.5rem;
+    }
+  }

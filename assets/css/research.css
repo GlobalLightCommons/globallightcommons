@@ -1,0 +1,242 @@
+/* ========================================
+   RESEARCH PAGE
+   ======================================== */
+
+   .research-page {
+    width: 100%;
+  }
+  
+  
+  /* ========================================
+     PAGE INTRO
+     ======================================== */
+  
+  .research-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem 3.5rem;
+  
+    text-align: center;
+  }
+  
+  .research-intro h1 {
+    margin: 0 0 1.5rem;
+  
+    color: var(--glc-accent-dark);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  
+  .research-intro-lead {
+    max-width: 850px;
+    margin: 0 auto;
+  
+    color: var(--glc-muted);
+    font-size: 1.2rem;
+    line-height: 1.65;
+  }
+  
+  
+  /* ========================================
+     RESEARCH SECTIONS
+     ======================================== */
+  
+  .research-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem;
+  
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 4.5rem;
+  
+    /* Keep image top aligned with heading */
+    align-items: start;
+  }
+  
+  .research-section-reverse .research-copy {
+    order: 2;
+  }
+  
+  .research-section-reverse .research-image {
+    order: 1;
+  }
+  
+  
+  /* ========================================
+     TEXT
+     ======================================== */
+  
+  .research-copy {
+    min-width: 0;
+  }
+  
+  .research-copy h2 {
+    margin: 0 0 1.5rem;
+  
+    color: var(--glc-accent-dark);
+    font-size: clamp(1.8rem, 2.7vw, 2.4rem);
+    font-weight: 650;
+    line-height: 1.2;
+  }
+  
+  .research-copy p {
+    margin: 0 0 1.5rem;
+  
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .research-copy p:last-of-type {
+    margin-bottom: 2rem;
+  }
+  
+  
+  /* ========================================
+     CTA BUTTONS
+     ======================================== */
+  
+  .research-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 0.7rem 1.1rem;
+  
+    border: 1px solid var(--glc-accent);
+    border-radius: 999px;
+  
+    background: #fff;
+    color: var(--glc-accent-dark);
+  
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+  
+    transition:
+      background 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease;
+  }
+  
+  .research-button:hover,
+  .research-button:focus {
+    border-color: var(--glc-accent-dark);
+    background: var(--glc-accent-soft);
+    color: var(--glc-accent-dark);
+  }
+  
+  
+  /* ========================================
+     IMAGES
+     ======================================== */
+  
+  .research-image {
+    width: 100%;
+    min-width: 0;
+  }
+  
+  .research-image img {
+    display: block;
+  
+    width: 100%;
+    height: auto;
+  
+    border-radius: 0.8rem;
+  
+    box-shadow:
+      0 10px 24px rgba(24, 37, 34, 0.08);
+  }
+  
+  
+  /* ========================================
+     VISUAL SEPARATION
+     ======================================== */
+  
+  .research-section + .research-section {
+    border-top: 1px solid var(--glc-line);
+  }
+  
+  
+  /* ========================================
+     TABLET
+     ======================================== */
+  
+  @media (max-width: 850px) {
+    .research-intro {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+  
+    .research-section {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+  
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  
+    .research-section-reverse .research-copy,
+    .research-section-reverse .research-image {
+      order: initial;
+    }
+  
+    .research-image {
+      max-width: 720px;
+    }
+  }
+  
+  
+  /* ========================================
+     MOBILE
+     ======================================== */
+  
+  @media (max-width: 600px) {
+    .research-intro,
+    .research-section {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
+  
+    .research-intro {
+      padding-top: 3.5rem;
+      padding-bottom: 2.5rem;
+    }
+  
+    .research-intro h1 {
+      margin-bottom: 1.25rem;
+  
+      font-size: clamp(2.3rem, 11vw, 3rem);
+    }
+  
+    .research-intro-lead {
+      font-size: 1.05rem;
+    }
+  
+    .research-section {
+      gap: 2rem;
+  
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+  
+    .research-copy h2 {
+      margin-bottom: 1.25rem;
+    }
+  
+    .research-copy p {
+      margin-bottom: 1.25rem;
+    }
+  
+    .research-copy p:last-of-type {
+      margin-bottom: 1.75rem;
+    }
+  
+    .research-image {
+      max-width: 100%;
+    }
+  }

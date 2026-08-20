@@ -1,0 +1,385 @@
+/* ========================================
+   GLOBAL RESET
+   ======================================== */
+
+   html,
+   body {
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+   }
+   
+   *,
+   *::before,
+   *::after {
+     box-sizing: border-box;
+   }
+   
+   
+   /* ========================================
+      HEADER / NAVIGATION
+      ======================================== */
+   
+   .glc-navbar {
+     min-height: 96px;
+     border-bottom: 1px solid var(--glc-line);
+     background: rgba(255, 255, 255, 0.97);
+     box-shadow: 0 8px 24px rgba(24, 37, 34, 0.07);
+   }
+   
+   .glc-navbar-inner {
+     max-width: 1200px;
+     min-height: 96px;
+     margin: 0 auto;
+     padding: 0 2rem;
+   
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 2rem;
+   }
+   
+   .glc-brand {
+     flex: 0 0 auto;
+     display: flex;
+     align-items: center;
+   }
+   
+   .glc-brand img {
+     display: block;
+     width: 220px;
+     height: 72px;
+     object-fit: contain;
+   }
+   
+   .glc-nav-links {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+   }
+   
+   .glc-nav-links a {
+     padding: 0.6rem 0;
+   
+     color: #374151;
+     font-size: 0.875rem;
+     font-weight: 500;
+     text-decoration: none;
+     white-space: nowrap;
+   }
+   
+   .glc-nav-links a:hover,
+   .glc-nav-links a:focus,
+   .glc-nav-links a.active {
+     color: var(--glc-accent-dark);
+   }
+   
+   /* ========================================
+   MICROGRANT NAV BUTTON
+   ======================================== */
+
+   .nav-microgrant {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 0.65rem 1rem !important;
+  
+    border: 1.5px solid var(--glc-accent);
+    border-radius: 0.6rem;
+  
+    background: transparent;
+    color: var(--glc-accent) !important;
+  
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1;
+  
+    text-decoration: none !important;
+    white-space: nowrap;
+  
+    transition:
+      background 0.15s ease,
+      color 0.15s ease,
+      transform 0.15s ease;
+  }
+  
+  .nav-microgrant::after {
+    content: "→";
+    margin-left: 0.5rem;
+  
+    font-size: 1rem;
+    transition: transform 0.15s ease;
+  }
+  
+  .nav-microgrant:hover,
+  .nav-microgrant:focus {
+    background: var(--glc-accent);
+    color: #fff !important;
+    transform: translateY(-1px);
+  }
+  
+  .nav-microgrant:hover::after,
+  .nav-microgrant:focus::after {
+    transform: translateX(2px);
+  }
+   
+   /* ========================================
+      BUTTONS
+      ======================================== */
+   
+   .glc-button {
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+   
+     padding: 0.65rem 1rem;
+   
+     border: 0;
+     border-radius: 999px;
+   
+     background: var(--glc-accent);
+     color: #fff;
+   
+     font-size: 0.9rem;
+     font-weight: 700;
+     text-decoration: none;
+   }
+   
+   .glc-button:hover,
+   .glc-button:focus {
+     background: var(--glc-accent-dark);
+     color: #fff;
+   }
+   
+   .glc-button-secondary {
+     border: 1px solid var(--glc-line);
+     background: #fff;
+     color: var(--glc-accent-dark);
+   }
+   
+   .glc-button-secondary:hover,
+   .glc-button-secondary:focus {
+     border-color: var(--glc-accent);
+     background: var(--glc-accent-soft);
+     color: var(--glc-accent-dark);
+   }
+   
+   .glc-button-light {
+     border: 1px solid rgba(255, 255, 255, 0.8);
+     background: rgba(255, 255, 255, 0.12);
+     color: #fff;
+   }
+   
+   .glc-button-light:hover,
+   .glc-button-light:focus {
+     border-color: #fff;
+     background: rgba(255, 255, 255, 0.22);
+     color: #fff;
+   }
+   
+   
+   /* ========================================
+      GENERIC PAGE SECTIONS
+      ======================================== */
+   
+   .section {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 4.5rem 2rem;
+   }
+   
+   .section-title {
+     margin: 0 0 2rem;
+   
+     color: var(--glc-accent-dark);
+     font-size: clamp(1.8rem, 2.4vw, 2.25rem);
+     font-weight: 600;
+     line-height: 1.2;
+   }
+   
+   .section-title-centered {
+     text-align: center;
+   }
+   
+   .section-intro {
+     max-width: 850px;
+     margin: 0;
+   
+     color: #43515a;
+     font-size: 1.18rem;
+     line-height: 1.65;
+   }
+   
+   
+   /* ========================================
+      FOOTER
+      ======================================== */
+   
+   .glc-footer {
+     margin-top: 0;
+   
+     background: #111827;
+     color: #d1d5db;
+   }
+   
+   .glc-footer-inner {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 3rem 2rem 1.25rem;
+   }
+   
+   .glc-footer-top {
+     display: grid;
+     grid-template-columns: 1.5fr 1fr;
+     gap: 4rem;
+   
+     padding-bottom: 2.5rem;
+   }
+   
+   .glc-footer-brand {
+     max-width: 520px;
+   }
+   
+   .glc-footer-logo {
+     display: block;
+   
+     width: 180px;
+     height: auto;
+   
+     margin-bottom: 1rem;
+   }
+   
+   .glc-footer-brand p,
+   .glc-footer-affiliation p {
+     margin: 0;
+   
+     color: #d1d5db;
+     line-height: 1.6;
+   }
+   
+   .glc-footer-links {
+     display: flex;
+     flex-direction: column;
+     gap: 0.55rem;
+   }
+   
+   .glc-footer-links h3 {
+     margin: 0 0 0.4rem;
+   
+     color: #fff;
+     font-size: 0.95rem;
+   }
+   
+   .glc-footer-links a {
+     color: #d1d5db;
+     font-size: 0.9rem;
+     text-decoration: none;
+   }
+   
+   .glc-footer-links a:hover,
+   .glc-footer-links a:focus {
+     color: var(--glc-accent);
+   }
+   
+   .glc-footer-affiliation {
+     padding: 2rem 0;
+   
+     border-top: 1px solid rgba(255, 255, 255, 0.12);
+   
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 1rem;
+   
+     text-align: center;
+   }
+   
+   .glc-tscn-logo {
+     display: block;
+   
+     width: min(280px, 76vw);
+     height: auto;
+   }
+   
+   .glc-footer-affiliation p {
+     max-width: 700px;
+   
+     font-size: 0.9rem;
+   }
+   
+   .glc-footer-bottom {
+     padding-top: 1rem;
+   
+     border-top: 1px solid rgba(255, 255, 255, 0.12);
+   
+     color: #9ca3af;
+     font-size: 0.8rem;
+   }
+   
+   
+   /* ========================================
+      RESPONSIVE — TABLET
+      ======================================== */
+   
+   @media (max-width: 1000px) {
+     .glc-navbar {
+       min-height: 82px;
+     }
+   
+     .glc-navbar-inner {
+       min-height: 82px;
+     }
+   
+     .glc-brand img {
+       width: 180px;
+       height: 60px;
+     }
+   
+     .glc-nav-links {
+       gap: 14px;
+     }
+   }
+   
+   
+   /* ========================================
+      RESPONSIVE — SMALL TABLET
+      ======================================== */
+   
+   @media (max-width: 850px) {
+     .glc-navbar-inner {
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+   
+       flex-direction: column;
+       align-items: flex-start;
+     }
+   
+     .glc-nav-links {
+       flex-wrap: wrap;
+     }
+   
+     .glc-footer-top {
+       grid-template-columns: 1fr;
+       gap: 2rem;
+     }
+   }
+   
+   
+   /* ========================================
+      RESPONSIVE — MOBILE
+      ======================================== */
+   
+   @media (max-width: 600px) {
+     .glc-navbar-inner,
+     .section,
+     .glc-footer-inner {
+       padding-right: 1.25rem;
+       padding-left: 1.25rem;
+     }
+   
+     .section {
+       padding-top: 3.5rem;
+       padding-bottom: 3.5rem;
+     }
+   }

@@ -1,0 +1,401 @@
+/* ========================================
+   HOMEPAGE HERO
+   ======================================== */
+
+   .hero-cover {
+    position: relative;
+  
+    min-height: 620px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background:
+      linear-gradient(
+        rgba(17, 24, 39, 0.42),
+        rgba(17, 24, 39, 0.42)
+      ),
+      url("/assets/images/legacy/glee-kickoff-1.jpg.jpeg")
+        76% center / 112% auto no-repeat;
+  }
+  
+  .hero-cover-content {
+    position: relative;
+    z-index: 1;
+  
+    width: 100%;
+    max-width: 900px;
+    padding: 3rem 2rem;
+  
+    text-align: center;
+  }
+  
+  .hero-cover h1 {
+    margin: 0 0 0.65rem;
+  
+    color: #fff;
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.025em;
+  }
+  
+  .hero-cover-subtitle {
+    margin: 0;
+  
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+  }
+  
+  .hero-actions-centered {
+    justify-content: center;
+  }
+  
+  
+  /* ========================================
+     ABOUT SECTION
+     ======================================== */
+  
+  .about-layout {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 4.5rem;
+  
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  .about-copy {
+    min-width: 0;
+  }
+  
+  .about-copy > p {
+    max-width: 720px;
+    margin: 0 0 1.5rem;
+  
+    color: #374151;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+  
+  .about-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  
+    margin-top: 2rem;
+  }
+  
+  .about-focus-item {
+    min-height: 104px;
+    padding: 1rem;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    border: 0;
+    border-radius: 0.7rem;
+  
+    background: #f8fafc;
+  
+    text-align: center;
+  }
+  
+  .about-focus-item svg {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0.55rem;
+  
+    fill: none;
+    stroke: var(--glc-accent);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .about-focus-item h3 {
+    margin: 0;
+  
+    color: var(--glc-ink);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  
+  .about-image {
+    width: 100%;
+    min-width: 0;
+    align-self: start;
+  }
+  
+  .about-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  
+    border-radius: 0.8rem;
+    box-shadow: 0 10px 24px rgba(24, 37, 34, 0.08);
+  }
+  
+  
+  /* ========================================
+     FOCUS AREA ILLUSTRATION
+     ======================================== */
+  
+  .focus-visual {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 4rem 2rem 5rem;
+  }
+  
+  .focus-visual .section-title {
+    margin-bottom: 2.5rem;
+  }
+  
+  .focus-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  /* ========================================
+     RESEARCH FOCUS
+     ======================================== */
+  
+  .research-focus {
+    padding: 4.5rem 2rem;
+  
+    background:
+      linear-gradient(
+        120deg,
+        var(--glc-accent) 0%,
+        var(--glc-accent-dark) 100%
+      );
+  }
+  
+  .research-focus-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .research-focus-title {
+    margin: 0 0 2.75rem;
+  
+    color: #fff;
+    font-size: clamp(1.8rem, 2.4vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.2;
+  
+    text-align: center;
+  }
+  
+  .research-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  
+  .research-focus-card {
+    padding: 1.75rem;
+  
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.8rem;
+  
+    background: rgba(255, 255, 255, 0.09);
+  }
+  
+  .research-focus-card h3 {
+    margin: 0 0 1rem;
+  
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+  
+  .research-focus-card p {
+    margin: 0;
+  
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+  
+  
+  /* ========================================
+     TEAM SECTION
+     ======================================== */
+  
+  .section-team {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  
+    text-align: center;
+  }
+  
+  .section-team .team-heading {
+    margin-bottom: 3rem;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.5rem;
+    align-items: start;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    display: block;
+  
+    width: 190px;
+    height: 190px;
+    margin: 0 auto 1.25rem;
+  
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .team-member h3 {
+    margin: 0 0 0.3rem;
+  
+    color: var(--glc-ink);
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  .team-member p {
+    margin: 0;
+  
+    color: var(--glc-muted);
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .team-actions {
+    margin-top: 2.75rem;
+    text-align: center;
+  }
+  
+  
+  /* ========================================
+     RESPONSIVE — TABLET
+     ======================================== */
+  
+  @media (max-width: 1000px) {
+    .team-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      row-gap: 3rem;
+    }
+  }
+  
+  
+  /* ========================================
+     RESPONSIVE — SMALL TABLET
+     ======================================== */
+  
+  @media (max-width: 850px) {
+    .hero-cover {
+      min-height: 560px;
+    }
+  
+    .hero-cover-content {
+      padding: 2.5rem 1.5rem;
+    }
+  
+    .about-layout {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+  
+      max-width: 900px;
+    }
+  
+    .about-image {
+      width: 100%;
+    }
+  
+    .about-image img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .research-focus-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  /* ========================================
+     RESPONSIVE — MOBILE
+     ======================================== */
+  
+  @media (max-width: 600px) {
+    .about-layout,
+    .focus-visual {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
+  
+    .hero-cover {
+      min-height: 500px;
+    }
+  
+    .hero-cover-content {
+      padding: 2.5rem 1.25rem;
+    }
+  
+    .hero-cover h1 {
+      font-size: 3.25rem;
+    }
+  
+    .hero-cover-subtitle {
+      font-size: 1.25rem;
+    }
+  
+    .hero-actions-centered {
+      gap: 0.65rem;
+    }
+  
+    .about-layout {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+  
+    .about-focus-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .focus-visual {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+  
+    .research-focus {
+      padding: 3.5rem 1.25rem;
+    }
+  
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .team-member img {
+      width: 170px;
+      height: 170px;
+    }
+  }
