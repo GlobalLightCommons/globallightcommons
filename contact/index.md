@@ -10,213 +10,56 @@ page_css: /assets/css/contact.css
     <h1>Contact Us</h1>
 
     <p>
-      Get in touch with the GLC research team or join our mailing list to stay updated on our
-      latest work.
+      Get in touch with the Global Light Commons research team.
     </p>
   </section>
 
 
-  <section class="contact-layout">
+  <section class="contact-panel">
 
-    <div class="contact-main">
+    <div class="contact-panel-main">
 
-      <div class="contact-form-card">
-        <h2>Keep up to date!</h2>
+      <div class="contact-primary-header">
 
-        <p class="contact-form-intro">
-          Join our mailing list to receive updates on the latest developments, upcoming webinars,
-          and collaborative opportunities in visual experience and optical radiation research.
-          Be part of a global community dedicated to advancing visual health.
+        <span class="contact-eyebrow">
+          Global Light Commons
+        </span>
+
+        <h2>
+          Get in touch
+        </h2>
+
+        <p>
+          We welcome enquiries about our research, activities, and
+          opportunities for collaboration.
         </p>
 
-        <!--
-          MAILING LIST:
-          When a provider/endpoint is chosen, replace action="" below.
-          Examples could be Mailchimp, Brevo, Formspree, or a custom endpoint.
-        -->
-
-        <form
-          class="contact-form"
-          onsubmit="return false;"
-        >
-
-          <div class="contact-form-grid">
-
-            <div class="form-field">
-              <label for="full-name">
-                Full Name <span aria-hidden="true">*</span>
-              </label>
-
-              <input
-                id="full-name"
-                name="full_name"
-                type="text"
-                placeholder="Enter your full name"
-                autocomplete="name"
-                required
-              >
-            </div>
-
-
-            <div class="form-field">
-              <label for="email">
-                Email Address <span aria-hidden="true">*</span>
-              </label>
-
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Enter your email address"
-                autocomplete="email"
-                required
-              >
-            </div>
-
-
-            <div class="form-field">
-              <label for="phone">
-                Contact Number
-              </label>
-
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                placeholder="Enter your phone number"
-                autocomplete="tel"
-              >
-            </div>
-
-
-            <div class="form-field">
-              <label for="institution">
-                Institution <span aria-hidden="true">*</span>
-              </label>
-
-              <input
-                id="institution"
-                name="institution"
-                type="text"
-                placeholder="Enter your institution or organization"
-                autocomplete="organization"
-                required
-              >
-            </div>
-
-
-            <div class="form-field form-field-full">
-                <label for="research-area">
-                    Research Area <span aria-hidden="true">*</span>
-                </label>
-
-                <select
-                    id="research-area"
-                    name="research_area"
-                    required
-                >
-                    <option value="" selected disabled>
-                    Select your research area
-                    </option>
-
-                    <option value="Circadian Rhythms & Sleep">
-                    Circadian Rhythms &amp; Sleep
-                    </option>
-
-                    <option value="Visual Health & Perception">
-                    Visual Health &amp; Perception
-                    </option>
-
-                    <option value="Lighting Design & Technology">
-                    Lighting Design &amp; Technology
-                    </option>
-
-                    <option value="Sensor Technology & Wearables">
-                    Sensor Technology &amp; Wearables
-                    </option>
-
-                    <option value="Data Science & Analytics">
-                    Data Science &amp; Analytics
-                    </option>
-
-                    <option value="Clinical Research">
-                    Clinical Research
-                    </option>
-
-                    <option value="Other">
-                    Other
-                    </option>
-                </select>
-</div>
-
-
-            <div class="form-field form-field-full">
-              <label for="message">
-                Message (Optional)
-              </label>
-
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Share any specific interests or questions"
-              ></textarea>
-            </div>
-
-          </div>
-
-
-          <label class="consent-field">
-            <input
-              type="checkbox"
-              name="consent"
-              value="yes"
-              required
-            >
-
-            <span>
-              I consent to receiving emails about GLC research, events, and opportunities.
-              You can unsubscribe at any time.
-            </span>
-          </label>
-
-
-          <button
-            class="contact-submit"
-            type="submit"
-          >
-            Join Our Mailing List
-          </button>
-
-        </form>
       </div>
 
-    </div>
 
-
-    <aside class="contact-sidebar">
-
-      <section class="contact-side-card">
-        <h2>Contact Information</h2>
-
-        <p class="contact-side-intro">
-          Reach out to us directly
-        </p>
+      <div class="contact-details">
 
         <div class="contact-detail">
 
           <div class="contact-detail-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24">
-              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <rect
+                x="3"
+                y="5"
+                width="18"
+                height="14"
+                rx="2"
+              ></rect>
+
               <path d="m3 7 9 6 9-6"></path>
             </svg>
           </div>
 
-          <div>
+          <div class="contact-detail-content">
             <h3>Email</h3>
 
-            <a href="mailto:e.tsukimori@tum.de">
-              e.tsukimori@tum.de
+            <a href="mailto:manuel.spitschan@tum.de">
+              manuel.spitschan@tum.de
             </a>
           </div>
 
@@ -227,11 +70,13 @@ page_css: /assets/css/contact.css
 
           <div class="contact-detail-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24">
-              <path d="M5 4h4l2 5-3 2a16 16 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2C10 21 3 14 3 6a2 2 0 0 1 2-2z"></path>
+              <path
+                d="M5 4h4l2 5-3 2a16 16 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2C10 21 3 14 3 6a2 2 0 0 1 2-2z"
+              ></path>
             </svg>
           </div>
 
-          <div>
+          <div class="contact-detail-content">
             <h3>Phone</h3>
 
             <a href="tel:+498928924544">
@@ -242,16 +87,23 @@ page_css: /assets/css/contact.css
         </div>
 
 
-        <div class="contact-detail">
+        <div class="contact-detail contact-detail-wide">
 
           <div class="contact-detail-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24">
-              <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11z"></path>
-              <circle cx="12" cy="10" r="2"></circle>
+              <path
+                d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11z"
+              ></path>
+
+              <circle
+                cx="12"
+                cy="10"
+                r="2"
+              ></circle>
             </svg>
           </div>
 
-          <div>
+          <div class="contact-detail-content">
             <h3>Address</h3>
 
             <address>
@@ -263,79 +115,163 @@ page_css: /assets/css/contact.css
           </div>
 
         </div>
-      </section>
 
 
-      <section class="contact-side-card">
-        <h2>Office Hours</h2>
+        <div class="contact-detail contact-detail-wide contact-office">
 
-        <p>
-          Monday - Friday: 9:00 AM - 5:00 PM CET
-        </p>
-      </section>
+          <div class="contact-detail-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+              ></circle>
 
-
-      <section class="contact-side-card">
-        <h2>Follow Our Research</h2>
-
-        <p>
-          Stay connected with our latest findings and updates through our academic and
-          social channels.
-        </p>
-
-       <div class="contact-social-links">
-
-        <a
-            class="contact-social-link"
-            href="https://www.linkedin.com/in/spitschan/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Global Light Commons on LinkedIn"
-        >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 9v9"></path>
-            <path d="M6 6.5v.01"></path>
-            <path d="M10 18v-5a4 4 0 0 1 8 0v5"></path>
-            <path d="M10 9v9"></path>
+              <path d="M12 7v5l3 2"></path>
             </svg>
+          </div>
 
-            <span>LinkedIn</span>
-        </a>
+          <div class="contact-detail-content">
+            <h3>Office Hours</h3>
 
-        <a
-            class="contact-social-link"
-            href="https://tscnlab.github.io/LightLogR/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LightLogR on GitHub"
-        >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2a10 10 0 0 0-3.16 19.49"></path>
-            <path d="M15.16 21.49A10 10 0 0 0 12 2"></path>
-            <path d="M9 19c-4 1.2-4-2-5-2"></path>
-            <path d="M15 22v-3.5c0-1 .1-1.8-.5-2.5 2.7-.3 5.5-1.3 5.5-6A4.6 4.6 0 0 0 18.8 7c.1-.3.5-1.5-.1-3 0 0-1-.3-3.2 1.2a11 11 0 0 0-5.8 0C7.5 3.7 6.5 4 6.5 4c-.6 1.5-.2 2.7-.1 3A4.6 4.6 0 0 0 5 10c0 4.7 2.8 5.7 5.5 6-.4.4-.6.9-.7 1.4"></path>
-            </svg>
-
-            <span>GitHub - LightLogR</span>
-        </a>
-
-        <a
-            class="contact-social-link"
-            href="https://www.youtube.com/channel/UCTrGLi-baRDhagV8ckBFgPQ"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Global Light Commons on YouTube"
-        >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="3" y="6" width="18" height="12" rx="4"></rect>
-            <path d="m10 9 5 3-5 3z"></path>
-            </svg>
-
-            <span>YouTube</span>
-        </a>
+            <p>
+              Monday - Friday: 9:00 AM - 5:00 PM CET
+            </p>
+          </div>
 
         </div>
-      </section>
+
+      </div>
+
+    </div>
+
+
+    <aside class="contact-panel-side">
+
+      <div class="contact-side-header">
+
+        <span class="contact-eyebrow">
+          Stay connected
+        </span>
+
+        <h2>
+          Follow Our Research
+        </h2>
+
+        <p>
+          Stay connected with our latest findings and updates through
+          our academic and social channels.
+        </p>
+
+      </div>
+
+
+      <div class="contact-social-links">
+
+        <a
+          class="contact-social-link"
+          href="https://www.linkedin.com/in/spitschan/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Global Light Commons on LinkedIn"
+        >
+
+          <div class="contact-social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 9v9"></path>
+              <path d="M6 6.5v.01"></path>
+              <path d="M10 18v-5a4 4 0 0 1 8 0v5"></path>
+              <path d="M10 9v9"></path>
+            </svg>
+          </div>
+
+          <div class="contact-social-text">
+            <strong>LinkedIn</strong>
+            <span>Follow our updates</span>
+          </div>
+
+          <span
+            class="contact-link-arrow"
+            aria-hidden="true"
+          >
+            →
+          </span>
+
+        </a>
+
+
+        <a
+          class="contact-social-link"
+          href="https://tscnlab.github.io/LightLogR/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LightLogR"
+        >
+
+          <div class="contact-social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2a10 10 0 0 0-3.16 19.49"></path>
+              <path d="M15.16 21.49A10 10 0 0 0 12 2"></path>
+              <path d="M9 19c-4 1.2-4-2-5-2"></path>
+
+              <path
+                d="M15 22v-3.5c0-1 .1-1.8-.5-2.5 2.7-.3 5.5-1.3 5.5-6A4.6 4.6 0 0 0 18.8 7c.1-.3.5-1.5-.1-3 0 0-1-.3-3.2 1.2a11 11 0 0 0-5.8 0C7.5 3.7 6.5 4 6.5 4c-.6 1.5-.2 2.7-.1 3A4.6 4.6 0 0 0 5 10c0 4.7 2.8 5.7 5.5 6-.4.4-.6.9-.7 1.4"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="contact-social-text">
+            <strong>LightLogR</strong>
+            <span>Explore our open-source tool</span>
+          </div>
+
+          <span
+            class="contact-link-arrow"
+            aria-hidden="true"
+          >
+            →
+          </span>
+
+        </a>
+
+
+        <a
+          class="contact-social-link"
+          href="https://www.youtube.com/channel/UCTrGLi-baRDhagV8ckBFgPQ"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Global Light Commons on YouTube"
+        >
+
+          <div class="contact-social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect
+                x="3"
+                y="6"
+                width="18"
+                height="12"
+                rx="4"
+              ></rect>
+
+              <path d="m10 9 5 3-5 3z"></path>
+            </svg>
+          </div>
+
+          <div class="contact-social-text">
+            <strong>YouTube</strong>
+            <span>Watch talks and presentations</span>
+          </div>
+
+          <span
+            class="contact-link-arrow"
+            aria-hidden="true"
+          >
+            →
+          </span>
+
+        </a>
+
+      </div>
 
     </aside>
 
