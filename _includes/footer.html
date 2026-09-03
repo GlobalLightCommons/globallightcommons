@@ -2,6 +2,7 @@
   <div class="glc-footer-inner">
 
     <div class="glc-footer-top">
+
       <div class="glc-footer-brand">
         <img
           src="{{ '/assets/images/legacy/glc-logo.png' | relative_url }}"
@@ -10,21 +11,81 @@
         >
 
         <p>
-          The Global Light Commons initiative at the Technical University of Munich
-          studies how light affects health and well-being across cultures and environments.
+          Global Light Commons Research Initiative at the Technical
+          University of Munich, studying how light affects health and
+          well-being across cultures and environments.
         </p>
+
+        <div class="glc-footer-social">
+          <a
+            href="https://www.linkedin.com/in/spitschan/"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="https://github.com/tscnlab"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/channel/UCTrGLi-baRDhagV8ckBFgPQ"
+            aria-label="YouTube"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a
+            href="mailto:e.tsukimori@tum.de"
+            aria-label="Email"
+          >
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
       </div>
 
       <div class="glc-footer-links">
-        <h3>Quick links</h3>
+        <h3>Quick Links</h3>
 
-        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/about/' | relative_url }}">About Us</a>
         <a href="{{ '/research/' | relative_url }}">Research</a>
-        <a href="{{ '/team/' | relative_url }}">Team</a>
-        <a href="{{ '/news/' | relative_url }}">News & Events</a>
+        <a href="{{ '/team/' | relative_url }}">Our Team</a>
+        <a href="{{ '/news/' | relative_url }}">News &amp; Events</a>
         <a href="{{ '/resources/' | relative_url }}">Resources</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
       </div>
+
+      <div class="glc-footer-newsletter">
+        <h3>Stay Updated</h3>
+
+        <p>
+          Subscribe to our newsletter for the latest updates.
+        </p>
+
+        <form
+          class="glc-newsletter-form"
+          onsubmit="return false;"
+        >
+          <label class="sr-only" for="footer-email">
+            Email address
+          </label>
+
+          <input
+            id="footer-email"
+            type="email"
+            name="email"
+            placeholder="Your email"
+            required
+          >
+
+          <button type="submit">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
     </div>
 
     <div class="glc-footer-affiliation">
@@ -35,13 +96,33 @@
       >
 
       <p>
-        Global Light Commons is a research initiative of the Translational Sensory
-        & Circadian Neuroscience Unit at the Technical University of Munich.
+        GLC is a research initiative by the Translational Sensory &amp; Circadian
+        Neuroscience Unit at Technical University of Munich.
       </p>
     </div>
 
     <div class="glc-footer-bottom">
-      <span>&copy; {{ 'now' | date: '%Y' }} Global Light Commons</span>
+      <span>
+        © 2026 GLC Research Initiative. All rights reserved.
+      </span>
+
+      <div class="glc-footer-legal">
+        <a
+          href="https://www.hs.mh.tum.de/en/mgt/datenschutz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Privacy Policy
+        </a>
+
+        <a
+          href="https://www.hs.mh.tum.de/en/mgt/impressum/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Terms of Use
+        </a>
+      </div>
     </div>
 
   </div>

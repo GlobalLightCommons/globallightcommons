@@ -37,8 +37,7 @@ page_css: /assets/css/contact.css
 
         <form
           class="contact-form"
-          action=""
-          method="post"
+          onsubmit="return false;"
         >
 
           <div class="contact-form-grid">

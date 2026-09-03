@@ -1,20 +1,38 @@
 <nav class="glc-navbar">
   <div class="glc-navbar-inner">
+
     <a href="{{ '/' | relative_url }}" class="glc-brand">
-      <img src="{{ '/assets/GLC_Logo.png' | relative_url }}" alt="Global Light Commons">
+      <img
+        src="{{ '/assets/GLC_Logo.png' | relative_url }}"
+        alt="Global Light Commons"
+      >
     </a>
 
-    <div class="glc-nav-links">
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/research/' | relative_url }}">Research</a>
-      <a href="{{ '/team/' | relative_url }}">Team</a>
-      <a href="{{ '/advisory-board/' | relative_url }}">Advisory Board</a>
-      <a href="{{ '/news/' | relative_url }}">News & Events</a>
-      <a href="{{ '/resources/' | relative_url }}">Resources</a>
-      <a href="{{ '/contact/' | relative_url }}">Contact</a>
-      <a class="nav-microgrant" href="{{ '/microgrant-programme/' | relative_url }}">
-        Microgrant Programme
-      </a>
+    <div class="glc-nav-area">
+
+      <div class="glc-nav-links">
+        <a href="{{ '/about/' | relative_url }}">About</a>
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+        <a href="{{ '/team/' | relative_url }}">Team</a>
+        <a href="{{ '/advisory-board/' | relative_url }}">Advisory Board</a>
+        <a href="{{ '/news/' | relative_url }}">News</a>
+        <a href="{{ '/resources/' | relative_url }}">Resources</a>
+        <a href="{{ '/acknowledgements/' | relative_url }}">Acknowledgements</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </div>
+
+      <div class="glc-ecosystem-nav">
+        <span class="glc-ecosystem-label">Ecosystem:</span>
+
+        <div class="glc-ecosystem-links">
+          <a href="https://tscnlab.github.io/glc-dp-viewer/">Overview</a>
+          <a href="https://tscnlab.github.io/glc-dp-viewer/metadata/">Standard</a>
+          <a href="https://tscnlab.github.io/glc-dp-viewer/registry/">Registry</a>
+          <a href="https://tscnlab.github.io/glc-dp-viewer/tools/">Tools</a>
+        </div>
+      </div>
+
     </div>
+
   </div>
 </nav>

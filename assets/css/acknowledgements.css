@@ -1,0 +1,138 @@
+/* ========================================
+   ACKNOWLEDGEMENTS PAGE
+   ======================================== */
+
+   .ack-page {
+    background: #fff;
+  }
+  
+  .ack-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem 5rem;
+  }
+  
+  
+  /* ========================================
+     HEADER
+     ======================================== */
+  
+  .ack-header {
+    margin-bottom: 2.5rem;
+  }
+  
+  .ack-header h1 {
+    margin: 0;
+  
+    color: var(--glc-accent-dark);
+  
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-weight: 600;
+    line-height: 1.15;
+  }
+  
+  
+  /* ========================================
+     CONTENT
+     ======================================== */
+  
+  .ack-content {
+    max-width: 900px;
+  }
+  
+  .ack-content p {
+    margin: 0 0 1.6rem;
+  
+    color: #43515a;
+  
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+  
+  .ack-content a {
+    color: var(--glc-accent-dark);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  
+    transition: color 0.15s ease;
+  }
+  
+  .ack-content a:hover,
+  .ack-content a:focus {
+    color: var(--glc-accent);
+  }
+  
+  
+  /* ========================================
+     FUNDING LOGOS
+     ======================================== */
+  
+  .ack-logos {
+    margin: 2.5rem 0;
+  
+    padding: 2rem;
+  
+    border: 1px solid var(--glc-line);
+    border-radius: 0.75rem;
+  
+    background: #fff;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .ack-logos img {
+    display: block;
+  
+    height: 80px;
+    width: auto;
+    max-width: 100%;
+  
+    object-fit: contain;
+  }
+  
+  
+  /* ========================================
+     RESPONSIVE
+     ======================================== */
+  
+  @media (max-width: 700px) {
+    .ack-container {
+      padding: 3.5rem 1.25rem 4rem;
+    }
+  
+    .ack-header {
+      margin-bottom: 2rem;
+    }
+  
+    .ack-content p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  
+    .ack-logos {
+      padding: 1.5rem;
+      gap: 2rem;
+    }
+  
+    .ack-logos img {
+      height: 64px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ack-logos {
+      flex-direction: column;
+    }
+  
+    .ack-logos img {
+      height: auto;
+      max-height: 70px;
+      max-width: 240px;
+    }
+  }
