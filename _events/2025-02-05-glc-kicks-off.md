@@ -19,5 +19,5 @@ location: "Munich, Germany"
 participants: "GLC Core Team"
 
 link_text: "View Launch Photos"
-external_url: "/events/kickoff-photos/"
+internal_url: "/events/kickoff-photos/"
 ---

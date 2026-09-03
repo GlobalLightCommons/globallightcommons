@@ -247,7 +247,15 @@ page_css: /assets/css/events.css
             {% endif %}
 
 
-            {% if event.external_url != blank %}
+            {% if event.internal_url != blank %}
+              <a
+                class="event-link"
+                href="{{ event.internal_url | relative_url }}"
+              >
+                {{ event.link_text }} →
+              </a>
+
+            {% elsif event.external_url != blank %}
               <a
                 class="event-link"
                 href="{{ event.external_url }}"
@@ -256,6 +264,7 @@ page_css: /assets/css/events.css
               >
                 {{ event.link_text }} →
               </a>
+
             {% elsif event.link_text %}
               <span class="event-link event-link-disabled">
                 {{ event.link_text }}
