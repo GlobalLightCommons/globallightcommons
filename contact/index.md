@@ -107,10 +107,12 @@ page_css: /assets/css/contact.css
             <h3>Address</h3>
 
             <address>
-              Translational Sensory &amp; Circadian Neuroscience Unit<br>
-              Technical University of Munich<br>
-              Arcisstraße 21<br>
-              80333 Munich, Germany
+              <strong>Professur für Chronobiology &amp; Health</strong><br>
+              Technische Universität München<br>
+              Department Health and Sports Sciences<br>
+              TUM Campus im Olympiapark<br>
+              Am Olympiacampus 11<br>
+              80809 München
             </address>
           </div>
 
