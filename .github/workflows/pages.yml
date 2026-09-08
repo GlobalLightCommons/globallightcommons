@@ -39,9 +39,39 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload artifact
+        id: upload-artifact-1
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
+        continue-on-error: true
+
+      # actions/upload-pages-artifact occasionally fails with a transient
+      # "403 Forbidden: Error from intermediary" error while finalizing the
+      # artifact upload. The composite action above already built the
+      # ${{ runner.temp }}/artifact.tar archive, so retries can re-upload it
+      # directly (with overwrite enabled, since the first attempt may have
+      # already registered the artifact name before failing).
+      - name: Upload artifact (retry 1)
+        id: upload-artifact-2
+        if: steps.upload-artifact-1.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
+          overwrite: true
+        continue-on-error: true
+
+      - name: Upload artifact (retry 2)
+        if: steps.upload-artifact-1.outcome == 'failure' && steps.upload-artifact-2.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
+          overwrite: true
 
   deploy:
     environment:
