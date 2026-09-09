@@ -19,5 +19,5 @@ description_2: >-
 location: "Munich, Germany (hybrid)"
 participants: "7 Advisory Board members, facilitating GLC team"
 link_text: "Meet the Advisory Board"
-external_url: "https://globallightcommons.org/advisory-board/"
+internal_url: /advisory-board/
 ---
