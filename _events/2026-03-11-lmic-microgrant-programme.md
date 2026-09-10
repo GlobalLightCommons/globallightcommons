@@ -2,7 +2,7 @@
 title: "New Microgrant Programme for LMIC Researchers and Dataset Harmonisation"
 date: 2026-03-11
 event_type: past
-image: /assets/images/legacy/events/Microgrant.png
+image: /assets/images/legacy/events/microgrant.png
 description: >-
   GLC launched a two-track micro-grant programme supporting data
   collection and harmonisation activities for the Global Light
