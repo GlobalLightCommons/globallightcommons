@@ -2,6 +2,7 @@
 title: "First Advisory Board Meeting: Progress, Insights, and Priorities"
 date: 2026-04-15
 event_type: past
+image: /assets/images/legacy/events/glc-advisory-board-introduction.png
 description: >-
   GLC held its inaugural Advisory Board meeting on 15 April 2026, bringing
   together all seven board members to review progress, share results from
