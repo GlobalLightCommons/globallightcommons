@@ -1,6 +1,6 @@
 ---
 title: "LightLogR Training Series 2025–2026"
-event_type: upcoming
+event_type: past
 series: true
 
 subtitle: "Open and reproducible analysis of light exposure and visual experience data - Online course"
