@@ -68,88 +68,111 @@ page_css: /assets/css/events.css
                 <p>{{ event.description }}</p>
               {% endif %}
 
-            </div>
-
-
-            <div class="training-tracks">
-
-              <article class="training-card training-card-beginner">
-
-                <p class="training-label">Beginner</p>
-
-                <h3>Beginner Course</h3>
-
-                <p>
-                  <strong>Part 1:</strong>
-                  {{ event.beginner_part_1 }}
-                  <br>
-
-                  <strong>Part 2:</strong>
-                  {{ event.beginner_part_2 }}
-                </p>
-
-                <p>
-                  <strong>Topics:</strong>
-                  {{ event.beginner_topics }}
-                </p>
-
-              </article>
-
-
-              <article class="training-card training-card-advanced">
-
-                <p class="training-label">Advanced</p>
-
-                <h3>Advanced Course</h3>
-
-                <p>
-                  <strong>Part 1:</strong>
-                  {{ event.advanced_part_1 }}
-                  <br>
-
-                  <strong>Part 2:</strong>
-                  {{ event.advanced_part_2 }}
-                </p>
-
-                <p>
-                  <strong>Topics:</strong>
-                  {{ event.advanced_topics }}
-                </p>
-
-              </article>
-
-            </div>
-
-
-            <div class="event-format">
-
-              <h3>Format</h3>
-
-              {% if event.format %}
-                <p>{{ event.format }}</p>
+              {% if event.description_2 %}
+                <p>{{ event.description_2 }}</p>
               {% endif %}
 
-              {% if event.schedule %}
-                <p>
-                  <strong>{{ event.schedule }}</strong>
-                  {% if event.schedule_note %}
+            </div>
+
+
+            {% if event.beginner_part_1 or event.advanced_part_1 %}
+              <div class="training-tracks">
+
+                <article class="training-card training-card-beginner">
+
+                  <p class="training-label">Beginner</p>
+
+                  <h3>Beginner Course</h3>
+
+                  <p>
+                    <strong>Part 1:</strong>
+                    {{ event.beginner_part_1 }}
                     <br>
-                    {{ event.schedule_note }}
-                  {% endif %}
-                </p>
-              {% endif %}
 
-              {% if event.qa %}
-                <p>{{ event.qa }}</p>
-              {% endif %}
+                    <strong>Part 2:</strong>
+                    {{ event.beginner_part_2 }}
+                  </p>
 
-              {% if event.certificate %}
-                <p>
-                  <strong>{{ event.certificate }}</strong>
-                </p>
-              {% endif %}
+                  <p>
+                    <strong>Topics:</strong>
+                    {{ event.beginner_topics }}
+                  </p>
 
-            </div>
+                </article>
+
+
+                <article class="training-card training-card-advanced">
+
+                  <p class="training-label">Advanced</p>
+
+                  <h3>Advanced Course</h3>
+
+                  <p>
+                    <strong>Part 1:</strong>
+                    {{ event.advanced_part_1 }}
+                    <br>
+
+                    <strong>Part 2:</strong>
+                    {{ event.advanced_part_2 }}
+                  </p>
+
+                  <p>
+                    <strong>Topics:</strong>
+                    {{ event.advanced_topics }}
+                  </p>
+
+                </article>
+
+              </div>
+            {% endif %}
+
+
+            {% if event.format or event.schedule or event.qa or event.certificate %}
+              <div class="event-format">
+
+                <h3>Format</h3>
+
+                {% if event.format %}
+                  <p>{{ event.format }}</p>
+                {% endif %}
+
+                {% if event.schedule %}
+                  <p>
+                    <strong>{{ event.schedule }}</strong>
+                    {% if event.schedule_note %}
+                      <br>
+                      {{ event.schedule_note }}
+                    {% endif %}
+                  </p>
+                {% endif %}
+
+                {% if event.qa %}
+                  <p>{{ event.qa }}</p>
+                {% endif %}
+
+                {% if event.certificate %}
+                  <p>
+                    <strong>{{ event.certificate }}</strong>
+                  </p>
+                {% endif %}
+
+              </div>
+            {% endif %}
+
+
+            {% if event.location or event.participants %}
+              <div class="event-meta">
+
+                {% if event.location %}
+                  <span>{{ event.location }}</span>
+                {% endif %}
+
+                {% if event.participants %}
+                  <span>{{ event.participants }}</span>
+                {% endif %}
+
+              </div>
+            {% endif %}
 
 
             <div class="featured-event-actions">
@@ -173,6 +196,25 @@ page_css: /assets/css/events.css
                   rel="noopener noreferrer"
                 >
                   Learn More About LightLogR →
+                </a>
+              {% endif %}
+
+              {% if event.internal_url != blank %}
+                <a
+                  class="event-button"
+                  href="{{ event.internal_url | relative_url }}"
+                >
+                  {{ event.link_text }} →
+                </a>
+
+              {% elsif event.external_url != blank %}
+                <a
+                  class="event-button"
+                  href="{{ event.external_url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{ event.link_text }} →
                 </a>
               {% endif %}
 
